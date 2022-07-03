@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Krati Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="pngtree-k-letter-logo-logos-png-image_7718389.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="columnlayout.css">
+  <!-- CSS only -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="//code.tidio.co/bflyzklwtbd0u75wx6z6l8e36svo60zr.js" async></script>
+  <script src="navbartoggle.js"></script>
+  <script src="api.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="3dDonut.js"></script>
+  <script src="https://kit.fontawesome.com/81831682c9.js" crossorigin="anonymous"></script>
+  <script src="homeintotext.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="mm.png"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav hoo ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+              aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+              href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#">Exp &
+              Edu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+              href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" href="#">Skills
+              & Certs</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="content">
+    <div class="container center-content">
+      <h3>Hi👋, I'm
+        <b id="full-name-text">Krati Goyal</b>
+      </h3>
+      <img class="profile_pic" src="profile.jpeg" alt="User">
+      <h3 id="home-into-text">
+        I an into
+        <span class="txt-rotate" data-period="2000"
+          data-rotate='["JAVA Development","WEB Development","UI/UX","Mentoring"]'></span>
+      </h3>
+      <div class="main">
+        <a href="https://github.com/iamkrati" target="_blank"> <i class=" fa-brands fa-3x fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/krati-goyal-910a39212/" target="_blank">
+          <i class="fab fa-3x fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/krati_goyal/" target="_blank">
+          <i class="fa-3x fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://linktr.ee/krati_glaian" target="_blank">
+          <i class="fa-solid fa-3x fa-circle-info"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.navbar-collapse a').click(function () {
+      $(".navbar-collapse").collapse('hide');
+    });
+  </script>
+  <section id="leetcode" style="background:url(4853433.jpg);">
+    <div class="container content-div">
+      <div class="row section-title">
+        <p class="title-text">
+          <img src="LeetCodeLogo.png">  LeetCode
+        </p>
+      </div>
+      <div class="total">
+        <div id="myChart" style="margin:auto;width:500%; max-width:600px; height:350px;">
+          <script>
+            google.charts.load('current', { 'packages': ['corechart'] });
+            google.charts.setOnLoadCallback(drawChart);
+          </script>
+        </div>
+        <div class="stats">
+          <div class="column1 column">
+            <p>ALL</p>
+            <span id="all">
+            </span> /
+            <span id="allques">
+            </span>
+          </div>
+          <div class="column">
+            <p>HARD</p>
+            <span id="hard">
+            </span> /
+            <span id="hardques">
+            </span>
+          </div>
+          <div class="column">
+            <p>MEDIUM</p>
+            <span id="medium">
+            </span> /
+            <span id="mediumques">
+            </span>
+          </div>
+          <div class="column">
+            <p>EASY</p>
+            <span id="easy">
+            </span> /
+            <span id="easyques">
+            </span>
+          </div>
+        </div>
+      </div>
+  </section>
+
+</body>
+
+</html>

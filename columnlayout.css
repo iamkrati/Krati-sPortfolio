@@ -1,0 +1,30 @@
+.total{
+    display: flex;
+    flex-wrap: wrap;
+}
+.stats{
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Signika Negative', sans-serif;
+    /* flex-direction: row-reverse; */
+}
+.column1{
+    margin-left: 40px;
+}
+.column{
+    border-radius: 25% ;
+    /* display: flex; */
+margin-left: 30px ;
+margin-top: 40px;
+    background: -webkit-linear-gradient(#ff1f98, #000000b3);
+    width: 180px;
+    height: 150px ;
+}
+.stats .column .p{
+    font-size: 45px;
+    text-decoration: underline;
+}
