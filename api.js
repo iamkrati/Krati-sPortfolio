@@ -2,6 +2,7 @@ var  totalSolvedQuestions = 0;
 var hardQues=0;
 var mediumQues=0;
 var easyQues=0;
+// kk
 fetch('https://leetcode-stats-api.herokuapp.com/Krati_Goyal').then(response=>
 {
   return response.json();
