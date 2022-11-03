@@ -36,6 +36,8 @@ drawChart();
 // fir(int )
 function drawChart() {
 var data = google.visualization.arrayToDataTable([
+  ['Country','MHL'],
+  ['Total',totalSolvedQuestions],
   ['Hard',hardQues],
   ['Medium',mediumQues],
   ['Easy',easyQues],    
