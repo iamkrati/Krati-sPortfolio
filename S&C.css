@@ -50,10 +50,6 @@
     width: 80px;
 }
 
-.skillsname img:hover {
-    transform: scale(2);
-}
-
 @media screen and (max-width:830px) {
     .skillsname img {
         margin: auto;
