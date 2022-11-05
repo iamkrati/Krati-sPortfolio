@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap" rel="stylesheet">
     <!-- CSS Links -->
     <link rel="stylesheet" href="night.css">
+    <link rel="stylesheet" href="laod.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Links -->
@@ -36,106 +37,120 @@
     <!-- End  -->
 </head>
 
-<body style="
+<body onload="myFunction()" style="
 background: black; color:white">
-    <nav class="navbar navbar-expand-lg" style="
+    <div id="loader"></div>
+    <div style="" id="myDiv" class="animate-bottom">
+        <nav class="navbar navbar-expand-lg" style="
     background: black; color:white">
-        <div class="container-fluid">
-            <h2 class="logo navbar-brand" style="color:white">me@Krati</h2>
-            <button style="color:white;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav hoo ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+            <div class="container-fluid">
+                <h2 class="logo navbar-brand" style="color:white">me@Krati</h2>
+                <button style="color:white;" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav hoo ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                   href="">About</a> -->
-                        <a class="nav-link active" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  active" 
-                            href="Exp&Edu.html">Exp &
-                            Edu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  active" 
-                            href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  active" 
-                            href="S&C.html">Skills</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="about">
-        <div id="me">
-            <div id="information">
-                <h2>Hey folks,<span> I'm A Developer</span></h2>
-                <p>Building a successfull product is a challenge, I am highly energetic in building
-                    a successfull product.
-                </p>
-                <br>
-                <div id="import">
-                    <button type="button" class="btn btn-outline-warning"><a target="_blank"
-                            href="https://drive.google.com/file/d/13S6eQif0cJjxFNudP-OjmVgQJ2pAcxXU/view?usp=sharing">Download Resume</a></button>
-                    <button type="button" class="btn btn-outline-warning"><a target="_blank"
-                            href="mailto: gkrati04@gmail.com">Hire me</a></button>
+                            <a class="nav-link active"  onclick="window.location.reload();" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="Exp&Edu.html">Exp &
+                                Edu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="S&C.html">Skills</a>
+                        </li>
+                    </ul>
                 </div>
-                <br>
-
-                <br>
             </div>
-            <img data-aos="zoom-in" data-aos-duration="2000" src="ABOUTProfile.jpg" alt="User-Image">
-        </div>
-    </section>
-    <div class="left" style="color: black;">
-        <div class="box box1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <span id="internship">
-                <i class="fa-solid fa-id-card-clip"></i>
-            </span>
-            <br>
-            <h3>2</h3>
-            <p>Internship</p>
-        </div>
+        </nav>
+        <section class="about">
+            <div id="me">
+                <div id="information">
+                    <h2>Hey folks,<span> I'm A Developer</span></h2>
+                    <p>Building a successfull product is a challenge, I am highly energetic in building
+                        a successfull product.
+                    </p>
+                    <br>
+                    <div id="import">
+                        <button type="button" class="btn btn-outline-warning"><a target="_blank"
+                                href="https://drive.google.com/file/d/1Yw53XwhIL-lFAS_FHs64l906h3IrfO-W/view">My
+                                Resume</a></button>
+                        <button type="button" class="btn btn-outline-warning"><a target="_blank"
+                                href="mailto: gkrati04@gmail.com">Hire me</a></button>
+                    </div>
+                    <br>
 
-        <div class="box box2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <span id="certifications">
-                <i class="fa-solid fa-award"></i>
-            </span>
-            <br>
-            <h3>5</h3>
-            <p>Certifications</p>
-        </div>
-        <div class="box box3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <span id="projects">
-                <i class="fa-brands fa-app-store"></i>
-            </span>
-            <br>
-            <h3>2</h3>
-            <p>Projects</p>
-        </div>
-        <div class="box box4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <span id="organizations">
-                <i class="fa-solid fa-graduation-cap"></i>
-            </span>
-            <br>
-            <h3>3</h3>
-            <p>Organizations</p>
+                    <br>
+                </div>
+                <img data-aos="zoom-in" data-aos-duration="2000" src="./IMG_4220.jpg" alt="User-Image">
+            </div>
+        </section>
+        <div class="left" style="color: black;">
+            <div class="box box1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <span id="internship">
+                    <i class="fa-solid fa-id-card-clip"></i>
+                </span>
+                <br>
+                <h3>2</h3>
+                <p>Internship</p>
+            </div>
+
+            <div class="box box2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <span id="certifications">
+                    <i class="fa-solid fa-award"></i>
+                </span>
+                <br>
+                <h3>10</h3>
+                <p>Certifications</p>
+            </div>
+            <div class="box box3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <span id="projects">
+                    <i class="fa-brands fa-app-store"></i>
+                </span>
+                <br>
+                <h3>2</h3>
+                <p>Projects</p>
+            </div>
+            <div class="box box4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <span id="organizations">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <br>
+                <h3>3</h3>
+                <p>Organizations</p>
+            </div>
         </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <script>
-        AOS.init({
-            offset: 0,
-            // duration: 2000,
-        });
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+
+    </script>
+    <script>
+        setTimeout(() => {
+        AOS.init();
+    }, 4100);
     </script>
 </body>
 

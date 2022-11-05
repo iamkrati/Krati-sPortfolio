@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Righteous&display=swap" rel="stylesheet">
     <!-- CSS Links -->
     <link rel="stylesheet" href="E&E.css">
+    <link rel="stylesheet" href="laod.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Links -->
@@ -36,9 +37,9 @@
     <!-- End  -->
 </head>
 
-<body>
-
-    <body style="background-color: #DDE4EC;">
+<body onload="myFunction()"style="background-color: black;">
+    <div id="loader"></div>
+    <div  style="background-color: #DDE4EC !important;" id="myDiv" class="animate-bottom">
         <nav class="navbar navbar-expand-lg" style="
     background: white; color:black;">
             <div class="container-fluid">
@@ -60,23 +61,21 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                                href="#">Exp &
+                                onclick="window.location.reload();">Exp &
                                 Edu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  active"
-                                href="projects.html">Projects</a>
+                            <a class="nav-link  active" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  active"
-                                href="S&C.html">Skills</a>
+                            <a class="nav-link  active" href="S&C.html">Skills</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <section id="experience" style="color:white;">
-            <h2>Work Experience</h2>
+            <h2>Experiences</h2>
             <br><br>
             <div class="e1" data-aos="fade-up" data-aos-duration="3000">
                 <div class="data">
@@ -108,36 +107,50 @@
                     <h5>May 2022 - July 2022</h5>
                 </div>
             </div>
+            <div data-aos="fade-up" data-aos-duration="3000" class="roundhr">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <div class="e2" data-aos="fade-up" data-aos-duration="3000">
+                <div class="data">
+                    <img src="download.png" alt="CompanyLogo">
+                </div>
+                <div class="data">
+                    <p>Technical Lead</p>
+                    <p>GeeksForGeeks Student Chapter GLAU</p>
+                </div>
+                <div class="data">
+                    <h5>October 2022 - Present</h5>
+                </div>
+            </div>
         </section>
         <section id="education">
-           <h2>Education</h2>
+            <h2>Education</h2>
         </section>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
-         <div class="left">
+        <div class="left">
             <div class="box box1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <span id="graduation">
                     <i class="fa-solid fa-graduation-cap"></i>
                 </span>
                 <br>
                 <h3>Bachelor of Technology</h3>
-                <span>Mathura,India</span><br>  
-                <span>2020-2024</span><br>  
-                <span>Computer Science and Engineering</span><br>  
+                <span>Mathura,India</span><br>
+                <span>2020-2024</span><br>
+                <span>Computer Science and Engineering</span><br>
                 <span>CPI : 8.7</span>
             </div>
-    
+
             <div class="box box2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <span id="school">
                     <i class="fa-solid fa-building-columns"></i>
                 </span>
                 <br>
                 <h3>Intermendiate</h3>
-                <span>BLS International School , Hathras</span><br>  
-                <span>2018-2020</span><br>  
-                <span>PCM</span><br>  
+                <span>BLS International School , Hathras</span><br>
+                <span>2018-2020</span><br>
+                <span>PCM</span><br>
                 <span>Percentage : 90.2%</span>
             </div>
             <div class="box box3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -146,11 +159,36 @@
                 </span>
                 <br>
                 <h3>High School</h3>
-                <span>CB Gupta Saraswati Vidyapeeth , Aligarh</span><br>  
-                <span>2016-2018</span><br> 
+                <span>CB Gupta Saraswati Vidyapeeth , Aligarh</span><br>
+                <span>2016-2018</span><br>
                 <span>Percentage : 80.0%</span>
             </div>
-         </div>
-    </body>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        var myVar;
+
+        function myFunction() {
+            document.body.style.background="black";
+            myVar = setTimeout(showPage, 3000);
+
+        }
+
+        function showPage() {
+            document.body.style.background="#DDE4EC";
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+
+    </script>
+    <script>
+        setTimeout(() => {
+            AOS.init();
+        }, 4100);
+    </script>
+</body>
 
 </html>

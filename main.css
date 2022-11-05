@@ -4,7 +4,9 @@ body {
     background: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
-    margin: 0% 0%;
+    background-size: 100% 100%;
+    margin: 0 0 0 0;
+    padding: 0px 0px 0px 0x;
 }
 
 nav img {
@@ -102,20 +104,44 @@ i {
 }
 
 /* sdgvb */
+.total
+{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
 #leetcode{
     text-align: center;
     font-size: 30px;
     width: 100%;
     margin: 0%;
-    height: 1000px;
+    height: 650px;
 }
-@media screen  and (max-width:400px){
+@media screen  and (max-width:993px){
     #leetcode{
         text-align: center;
         font-size: 30px;
         width: 100%;
         margin: 0%;
-        height: 1500px;
+        height: 810px;
+    }
+}
+@media screen  and (max-width:475px){
+    #leetcode{
+        text-align: center;
+        font-size: 30px;
+        width: 100%;
+        margin: 0%;
+        height: 830px;
+    }
+}
+@media screen  and (max-width:446px){
+    #leetcode{
+        text-align: center;
+        font-size: 30px;
+        width: 100%;
+        margin: 0%;
+        height: 1300px;
     }
 }
 @media screen  and (max-width:700px){
@@ -123,7 +149,7 @@ i {
         margin:auto;
         width:350px;
          max-width:700px; 
-         height:350px;
+         height:250px;
     }
 }
 .title-text::after{

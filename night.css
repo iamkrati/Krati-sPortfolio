@@ -11,7 +11,7 @@ body{
     margin-left: 90px;
    height: 400px;
    width: 350px;
-   filter: contrast(110%)brightness(120%);
+   /* filter: contrast(110%)brightness(120%); */
 }
 #me{
     /* width: 1500px; */
@@ -25,6 +25,10 @@ body{
 }
 #information{
     font-weight: bold;
+}
+.container-fluid h2
+{
+    font-family: 'Fredoka One', cursive;
 }
 #information h2{
     /* width:400px; */
@@ -40,7 +44,11 @@ body{
 }
 #information p{
     width: 450px;
-    color:grey
+    color:grey;
+}
+.box p
+{
+    font-family: 'Fredoka One', cursive;
 }
 @media screen and (max-width:450px) {
     #information p{
@@ -52,7 +60,7 @@ body{
         /* margin-left: 90px; */
        height: 400px;
        width: 280px;
-       filter: contrast(110%)brightness(120%);
+       filter: contrast(100%)brightness(110%);
     }
     #information h2 span{
         font-size: 30px; 
@@ -102,7 +110,6 @@ ul li a{
     display: flex;
     font-size: large;
 }
-
 .navbar ul li {
     margin-right: 20px;
     color: #0000008c;
@@ -190,4 +197,8 @@ ul li a{
 .logo{
     font-family: 'Edu NSW ACT Foundation', cursive;
     /* font-size: 25px !important; */
+}
+.hoo a:hover
+{
+    color: yellow !important;
 }

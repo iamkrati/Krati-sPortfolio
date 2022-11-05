@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- To  set logo Links -->
     <link rel="icon" type="image/x-icon" href="pngtree-k-letter-logo-logos-png-image_7718389.png">
-    <!-- Font Awsome Links -->
+    <!-- Font Awesome Links -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,7 @@
     <!-- CSS Links -->
     <link rel="stylesheet" href="night.css">
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="laod.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Links -->
@@ -39,69 +40,152 @@
     <!-- End  -->
 </head>
 
-<body
-    style="background-image: url('https://images.unsplash.com/photo-1438986710423-1bf13038bc14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');color:white">
-    <nav class="navbar navbar-expand-lg" style="
-    background: rgb(255, 255, 255); color:rgb(0, 0, 0)">
-        <div class="container-fluid">
-            <h2 class="logo navbar-brand" style="color:rgb(0, 0, 0)">me@Krati</h2>
-            <button style="color:rgb(0, 0, 0);" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav hoo ms-auto" style="color:black;">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <!-- <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+<body onload="myFunction()" style=" background:black ;color:white">
+    <div id="loader"></div>
+    <div style="display:none;"
+        id="myDiv" class="animate-bottom">
+        <nav class="navbar navbar-expand-lg" style="
+     background: rgb(255, 255, 255); color:rgb(0, 0, 0)">
+            <div class="container-fluid">
+                <h2 class="logo navbar-brand" style="color:rgb(0, 0, 0)">me@Krati</h2>
+                <button style="color:rgb(0, 0, 0);" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav hoo ms-auto" style="color:black;">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
                   href="">About</a> -->
-                        <a class="nav-link active" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  active" href="Exp&Edu.html">Exp &
-                            Edu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
-                            href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  active"
-                            href="S&C.html">Skills</a>
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="Exp&Edu.html">Exp &
+                                Edu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+                                onclick="window.location.reload();" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="S&C.html">Skills</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <h3 style="text-align:center; margin-top: 30px; background: -webkit-linear-gradient(rgb(0 125 252), #361d1d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; font-family: 'Righteous', cursive;">Recent Work</h3>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div id="container">
+
+            <div class="product-details">
+
+                <h1>LeetCode Filter</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+
+                <p class="information">
+                <ul>
+                    <li>Developed a LeetCode Filter to solve a questions on LeetCode.</li>
+                    <li>The configuration includes various user activities on a webpage, such as user’s dashboard ,
+                        choose a
+                        topic and question
+                        difficulty level.</li>
+                    <li>Added Chrome Extention Feature which is very effective.
                     </li>
                 </ul>
+                </p>
+
+            </div>
+            <div class="product-image">
+
+                <img src="./Screenshot (249).png" alt="">
+
+
+                <div class="info">
+                    <h2> Description</h2>
+                    <ul>
+                        <li><strong>Tech Stack : </strong> HTML|CSS|JavaScript|<br>Leetcode API </li>
+                        <div class="link">
+                            <a href="https://github.com/iamkrati/LeetCode-Filter" target="_blank"><i
+                                    class="fa-brands fa-github"></i>View Project</a>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
-    </nav>
-    <h3 style="text-align:center; margin-top: 20px; background: -webkit-linear-gradient(rgb(0 125 252), #361d1d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; font-family: 'Righteous', cursive;">Recent Work</h3>
-    <div class="prjct" id="prjct" style="color: rgb(0, 0, 0);">
-        <div id="p1"  data-aos="fade-right">
-            <img src="Screenshot (249).png">
-            <br><br>
-            <h3 style="font-family: 'Righteous', cursive;">LeetCode Filter</h3>
-            <div class="link">
-                <a href="https://github.com/iamkrati/LeetCode-Filter" target="_blank"><i class="fa-brands fa-github"></i>View Project</a>
+        <!--  -->
+        <div id="container">
+
+            <div class="product-details">
+
+                <h1>MyPortfolio</h1>
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+
+                <p class="information">
+                <ul>
+                    <li>Developed a interactive web application.</li>
+                    <li>Added chat support using a TIDIO live chat and also Leetcode Stat's.</li>
+                    <li>It contains all the information related to my education,experience,skills and my all social
+                        media
+                        links.
+                    </li>
+                </ul>
+                </p>
+
+            </div>
+
+            <div class="product-image">
+
+                <img src="./MyPort.png" alt="">
+
+
+                <div class="info">
+                    <h2> Description</h2>
+                    <ul>
+                        <li><strong>Tech Stack : </strong> HTML | CSS | JavaScript </li>
+                        <div class="link">
+                            <a href="https://iamkrati.github.io/Krati-sPortfolio/index.html" target="_blank"><i
+                                    class="fa-brands fa-github"></i>View Project</a>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div id="p2" data-aos="fade-left">
-            <img src="portfoliothumbnail.png">
-            <br><br>
-            <h3 style="font-family: 'Righteous', cursive;">MyPortfolio</h3>
-            <div class="link">
-                <a href="https://iamkrati.github.io/Krati-sPortfolio/index.html" target="_blank"><i class="fa-brands fa-github"></i>View Project</a>
-            </div>
-        </div>
-        
     </div>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
-      </script>
+        var myVar;
+
+        function myFunction() {
+            document.body.style.background="black";
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+            document.body.style.background="url('https://images.unsplash.com/photo-1438986710423-1bf13038bc14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')";
+        }
+
+    </script>
 </body>
 
 </html>

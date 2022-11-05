@@ -2,7 +2,6 @@
 
 body {
     /* font-family: 'Fugaz One', cursive; */
-
     width: 100%;
     height: 100%;
     margin: 0px 0px 0px 0px;
@@ -180,7 +179,10 @@ ul li a {
     /* width: 150px; */
     line-height: 0.6;
 }
-
+ul li a:hover
+{
+    cursor:  pointer !important;
+}
 .box2 #school {
     position: absolute;
     left: 140px;
@@ -207,7 +209,7 @@ ul li a {
     font-size: 40px;
     /* width: 150px; */
 }
-@media screen and (max-width:300px) {
+@media screen and (max-width:350px) {
     .data p{
         font-size: 10px;
     }
@@ -222,4 +224,19 @@ ul li a {
         font-size: 20px;
     }
 }
+
+.container-fluid h2
+{
+    font-family: 'Fredoka One', cursive;
+}
 /* 350 1100 */
+.hoo li a:hover
+{
+    color: rgb(89, 89, 170) !important;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.box h3
+{
+    font-family: 'Fredoka One', cursive;
+}
